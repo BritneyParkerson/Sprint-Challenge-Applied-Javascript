@@ -1,6 +1,6 @@
 Self-Study Questions
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
-Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
+Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager 
 
 1.	What is the DOM?
         •	DOM stands for “Document Object Model”. It represents the content of a webpage that can be manipulated with the use of JavaScript. It acts as a bridge between code and the browser and is an API (Application Programming Interface) that is provided by the browser itself, not JavaScript. 

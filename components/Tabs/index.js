@@ -1,4 +1,4 @@
-// Step 2: Create Tabs
+// Step 2: Create menu
 // -----------------------
 // Using axios send a GET request to the address: https://lambda-times-backend.herokuapp.com/topics
 // Once the data is returned console.log it and review the structure.
@@ -7,3 +7,24 @@
 //
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
+
+axios.get('https://lambda-times-backend.herokuapp.com/topics')
+.then((response) => {
+    let site = document.querySelector(".topics");
+    response.data.topics.forEach(tab => {
+      site.appendChild(menu(tab));
+    })
+  })
+  .catch((error) => {
+    console.log("Error: Oopsie Poopsies!");
+    console.log(error);
+  })
+
+function menu(object) {
+
+    let menuTab = document.createElement("div");
+    menuTab.classList.add("tab");
+    menuTab.innerHTML = object;
+
+return menuTab;
+}
